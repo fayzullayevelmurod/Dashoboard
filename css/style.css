@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+span, label {
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  outline: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main_container {
+  max-width: 1380px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main_btn {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  padding: 11px 40px;
+  color: #FFFFFF;
+  background: #5FB669;
+  border-radius: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+label {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.entrance {
+  background-image: url("../images/main_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.entrance_form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  border-radius: 10px;
+  padding: 55px 40px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.entrance .header_logo {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 24px;
+}
+.entrance .header_logo img {
+  width: 100%;
+}
+.entrance form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.entrance h6 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #000;
+  text-align: center;
+}
+.entrance .main_btn {
+  width: 133px;
+  margin: 0 auto;
+}
+.entrance label {
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  background: rgb(242, 242, 242);
+  padding: 13px 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.entrance label input {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+}
+.entrance p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+.entrance p a {
+  color: #006FA7;
+}
+.entrance .line {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 24px 0;
+}
+.entrance .line .line_block {
+  width: 100px;
+  height: 1px;
+  background: #E5E5E5;
+}
+.entrance .telegram_btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 10px;
+  background: #006FA7;
+  padding: 8px;
+}
+.entrance .telegram_btn span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */

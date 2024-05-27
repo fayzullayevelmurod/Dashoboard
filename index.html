@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Dashoboard</title>
     <!-- Swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- css file -->
@@ -13,7 +13,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- fonts -->
     <!-- css link -->
     <link rel="stylesheet" href="./css/style.css">
@@ -22,25 +22,52 @@
 <body>
     <div class="wrapper">
 
-        <!-- header -->
-        <header>
-
-        </header>
-        <!-- header -->
-
         <!-- main -->
         <main>
             <!-- home -->
-            <section class="home"></section>
+            <section class="entrance">
+                <div class="entrance_form">
+                    <a href="/" class="header_logo">
+                        <img src="./images/logo/header_logo.svg" alt="">
+                    </a>
+                    <form action="#">
+                        <h6>
+                            Вход
+                        </h6>
+                        <label for="login">
+                            <img src="./images/icons/user_icon.svg" alt="">
+                            <input type="text" id="login" placeholder="логин" autocomplete="off">
+                        </label>
+                        <label for="password">
+                            <img src="./images/icons/key_icon.svg" alt="">
+                            <input type="password" id="password" placeholder="пароль" autocomplete="off">
+                        </label>
+                        <button type="submit" class="main_btn">
+                            Войти
+                        </button>
+                        <p>
+                            Нет аккаунта? <a href="#">Регистрация</a>
+                        </p>
+                    </form>
+                    <div class="line">
+                        <div class="line_block"></div>
+                        <p>
+                            или 
+                        </p>
+                        <div class="line_block"></div>
+                    </div>
+                    <a href="#" class="telegram_btn">
+                        <img src="./images/icons/telegram_icon.svg" alt="">
+                        <span>
+                            Войти с помощью Telegram 
+                        </span>
+                    </a>
+                </div>
+            </section>
             <!-- home -->
         </main>
         <!-- main -->
         
-        <!-- footer -->
-        <footer>
-
-        </footer>
-        <!-- footer -->
     </div>
     
     <!-- bootstrap -->

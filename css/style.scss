@@ -114,16 +114,14 @@ label {
 }
 // bootstrap
 
+// entrance
 .entrance {
     background-image: url('../images/main_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     height: 100vh;
-    position: relative;
 
     &_form {
-        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -131,25 +129,15 @@ label {
         border-radius: 10px;
         padding: 55px 40px;
         background: #fff;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
     }
 
     .header_logo {
         width: 200px;
         height: 50px;
         margin-bottom: 24px;
-
-        img {
-            width: 100%;
-        }
     }
 
     form {
-        display: flex;
-        flex-direction: column;
         gap: 16px;
     }
 
@@ -159,7 +147,6 @@ label {
         line-height: 28px;
         letter-spacing: -0.02em;
         color: #000;
-        text-align: center;
     }
 
     .main_btn {
@@ -172,7 +159,6 @@ label {
         border-radius: 10px;
         background: rgb(242, 242, 242);
         padding: 13px 14px;
-        @include flex-center();
         gap: 4px;
 
         input {
@@ -198,7 +184,6 @@ label {
     }
     
     .line {
-        @include flex-center();
         gap: 24px;
         margin: 24px 0;
 
@@ -211,7 +196,6 @@ label {
 
     .telegram_btn {
         width: 100%;
-        @include flex-full-center();
         gap: 8px;
         border-radius: 10px;
         background: #006FA7;
@@ -224,6 +208,88 @@ label {
             letter-spacing: -0.01em;
             color: #FFFFFF;
         }
+    }
+}
+// entrance
+
+aside {
+    width: 320px;
+    box-shadow: 1px 0px 10px 0px rgba(39, 46, 59, 0.15);
+    background: rgb(255, 255, 255);
+
+    .header_logo,
+    .balance {
+        border-bottom: 1px solid rgb(135, 183, 255);
+    }
+
+    .header_logo {
+        padding: 16px 35px 24px 35px;
+
+        img {
+            width: 250px;
+        }
+    }
+
+    .balance {
+        padding: 24px 28px 16px 28px;
+        
+        h6 {
+            gap: 4px;
+
+            span {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 28px;
+                letter-spacing: -0.01em;
+                color: #000000;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #000000;
+        }
+    }
+
+    ul {
+        padding: 24px 28px;
+
+        a {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: -0.01em;    
+            color: #000000;
+            @include transition();
+            border-radius: 10px;
+            padding: 12px 24px;
+
+            svg {
+                path {
+                    @include transition();
+                }
+            }
+
+            &:hover {
+                background: #006FA7;
+                color: #fff;
+
+                svg {
+                    path {
+                        fill: #fff;
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .aside_bottom {
+        padding: 32px auto 16px auto;
+        border-top: 1px solid rgb(135, 183, 255);
     }
 }
 

@@ -84,12 +84,9 @@ label {
   background-image: url("../images/main_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
   height: 100vh;
-  position: relative;
 }
 .entrance_form {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -97,22 +94,13 @@ label {
   border-radius: 10px;
   padding: 55px 40px;
   background: #fff;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
 }
 .entrance .header_logo {
   width: 200px;
   height: 50px;
   margin-bottom: 24px;
 }
-.entrance .header_logo img {
-  width: 100%;
-}
 .entrance form {
-  display: flex;
-  flex-direction: column;
   gap: 16px;
 }
 .entrance h6 {
@@ -121,7 +109,6 @@ label {
   line-height: 28px;
   letter-spacing: -0.02em;
   color: #000;
-  text-align: center;
 }
 .entrance .main_btn {
   width: 133px;
@@ -132,8 +119,6 @@ label {
   border-radius: 10px;
   background: rgb(242, 242, 242);
   padding: 13px 14px;
-  display: flex;
-  align-items: center;
   gap: 4px;
 }
 .entrance label input {
@@ -155,8 +140,6 @@ label {
   color: #006FA7;
 }
 .entrance .line {
-  display: flex;
-  align-items: center;
   gap: 24px;
   margin: 24px 0;
 }
@@ -167,9 +150,6 @@ label {
 }
 .entrance .telegram_btn {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 8px;
   border-radius: 10px;
   background: #006FA7;
@@ -181,4 +161,68 @@ label {
   line-height: 22px;
   letter-spacing: -0.01em;
   color: #FFFFFF;
+}
+
+aside {
+  width: 320px;
+  box-shadow: 1px 0px 10px 0px rgba(39, 46, 59, 0.15);
+  background: rgb(255, 255, 255);
+}
+aside .header_logo,
+aside .balance {
+  border-bottom: 1px solid rgb(135, 183, 255);
+}
+aside .header_logo {
+  padding: 16px 35px 24px 35px;
+}
+aside .header_logo img {
+  width: 250px;
+}
+aside .balance {
+  padding: 24px 28px 16px 28px;
+}
+aside .balance h6 {
+  gap: 4px;
+}
+aside .balance h6 span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+aside .balance p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000000;
+}
+aside ul {
+  padding: 24px 28px;
+}
+aside ul a {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #000000;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  padding: 12px 24px;
+}
+aside ul a svg path {
+  transition: 0.3s ease;
+}
+aside ul a:hover {
+  background: #006FA7;
+  color: #fff;
+}
+aside ul a:hover svg path {
+  fill: #fff;
+  stroke: #fff;
+}
+aside .aside_bottom {
+  padding: 32px auto 16px auto;
+  border-top: 1px solid rgb(135, 183, 255);
 }/*# sourceMappingURL=style.css.map */

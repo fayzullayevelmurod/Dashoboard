@@ -86,6 +86,11 @@ address {
     margin: 0 auto;
 }
 
+.main_wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .main_btn {
     font-size: 16px;
     font-weight: 600;
@@ -212,6 +217,7 @@ label {
 }
 // entrance
 
+// aside
 aside {
     width: 320px;
     box-shadow: 1px 0px 10px 0px rgba(39, 46, 59, 0.15);
@@ -292,5 +298,55 @@ aside {
         border-top: 1px solid rgb(135, 183, 255);
     }
 }
+// aside
+
+// header
+header {
+    padding: 10px 61px;
+    background: #272E3B;
+    min-width: 100%;
+
+    .header_burger {
+        display: none;
+    }
+
+    .avatar {
+        gap: 16px;
+    }
+
+    .avatar_text {
+        text-align: right;
+        h6 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: -0.01em;
+            color: #fff;
+        }
+
+        p {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            color: #fff;
+        }
+
+        span {
+            color: #5FB669;
+        }
+
+        .avatar_text_bottom {
+            gap: 24px;
+        }
+    }
+}
+// header
+
+// offers
+.offers {
+    width: 100%;
+}
+// offers
 
 @import './responsive';

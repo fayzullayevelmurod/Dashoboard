@@ -54,6 +54,11 @@ address {
   margin: 0 auto;
 }
 
+.main_wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .main_btn {
   font-size: 16px;
   font-weight: 600;
@@ -225,4 +230,43 @@ aside ul a:hover svg path {
 aside .aside_bottom {
   padding: 32px auto 16px auto;
   border-top: 1px solid rgb(135, 183, 255);
+}
+
+header {
+  padding: 10px 61px;
+  background: #272E3B;
+  min-width: 100%;
+}
+header .header_burger {
+  display: none;
+}
+header .avatar {
+  gap: 16px;
+}
+header .avatar_text {
+  text-align: right;
+}
+header .avatar_text h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+header .avatar_text p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+header .avatar_text span {
+  color: #5FB669;
+}
+header .avatar_text .avatar_text_bottom {
+  gap: 24px;
+}
+
+.offers {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

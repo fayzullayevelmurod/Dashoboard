@@ -181,7 +181,8 @@ aside .header_logo {
   padding: 16px 35px 24px 35px;
 }
 aside .header_logo img {
-  width: 250px;
+  min-width: 250px;
+  height: 60px;
 }
 aside .balance {
   padding: 24px 28px 16px 28px;
@@ -267,6 +268,30 @@ header .avatar_text .avatar_text_bottom {
   gap: 24px;
 }
 
-.offers {
+.offers .offers_block {
   width: 100%;
+}
+.offers .avatar {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 993px) {
+  aside {
+    display: none;
+  }
+  header {
+    padding: 20px 8px;
+  }
+  header .header_burger {
+    display: flex;
+  }
+  .avatar_text {
+    display: none;
+  }
+  .avatar_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -232,7 +232,8 @@ aside {
         padding: 16px 35px 24px 35px;
 
         img {
-            width: 250px;
+            min-width: 250px;
+            height: 60px;
         }
     }
 
@@ -316,6 +317,7 @@ header {
 
     .avatar_text {
         text-align: right;
+        
         h6 {
             font-size: 20px;
             font-weight: 600;
@@ -345,7 +347,15 @@ header {
 
 // offers
 .offers {
-    width: 100%;
+
+
+    .offers_block {
+        width: 100%;
+    }
+
+    .avatar {
+        margin-left: auto;
+    }
 }
 // offers
 

@@ -1,4 +1,57 @@
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 1400px) {
+    .offers {
+
+        .offer_card_block {
+            gap: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .offers {
+        .offer_card_block_img {
+            min-width: 300px;
+        }
+
+        .offer_card_block_btns {
+            button {
+                .btn_text {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .offers_block_in {
+        margin: 0;
+    }
+
+    .block_title {
+        gap: 10px;
+        margin: 28px 8px;
+
+        .main_btn {
+            flex-shrink: 0;
+            padding: 8px;
+
+            span {
+                display: none;
+            }
+
+            img {
+                display: flex;
+            }
+        }
+    }
+
+    .main_title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
     aside {
         display: none;
     }
@@ -22,4 +75,54 @@
         border-radius: 50%;
         overflow: hidden;
     }
+
+    .offers {
+        .offer_card_block {
+            flex-direction: column;
+            gap: 40px;
+            border-radius: 0;
+            padding: 16px 8px 40px 8px;
+        }
+
+        .offer_card_block_text {
+            .link_block {
+                align-items: start;
+                flex-direction: column;
+            }
+
+            span, b , a {
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: -0.01em;
+            }
+
+            .blue_number {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        .offer_card_block_btns {
+            margin: 16px 0;
+            gap: 16px;
+
+            button {
+                width: 100%;
+                flex: auto;
+            }
+
+            .icon_btn {
+                flex-shrink: 0;
+                width: 40px;
+                height: 40px;
+                padding: 8px;
+            }
+        }
+        
+    }
+    
 }

@@ -168,6 +168,21 @@ label {
   color: #FFFFFF;
 }
 
+.bg {
+  background: rgba(0, 111, 167, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  display: none;
+}
+
+.bg.active {
+  display: block;
+}
+
 aside {
   width: 320px;
   box-shadow: 1px 0px 10px 0px rgba(39, 46, 59, 0.15);
@@ -231,6 +246,19 @@ aside ul a:hover svg path {
 aside .aside_bottom {
   padding: 32px auto 16px auto;
   border-top: 1px solid rgb(135, 183, 255);
+}
+
+.media_aside {
+  position: fixed;
+  z-index: 4;
+  left: -100%;
+  top: 0;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.media_aside.active {
+  left: 0;
 }
 
 header {

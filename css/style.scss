@@ -251,6 +251,9 @@ label {
 
 // aside
 aside {
+    position: relative;
+    top: 0;
+    height: 100%;
     width: 320px;
     box-shadow: 1px 0px 10px 0px rgba(39, 46, 59, 0.15);
     background: rgb(255, 255, 255);
@@ -293,6 +296,7 @@ aside {
     }
 
     ul {
+        margin-bottom: 200px;
         padding: 24px 28px;
 
         a {
@@ -505,7 +509,6 @@ header {
 // offers
 .offers {
 
-
     .offers_block {
         width: 100%;
     }
@@ -627,6 +630,52 @@ header {
     }
 }
 // offers
+
+// balance_card
+.balance_card {
+    max-width: 600px;
+    padding: 52px 68px 52px 36px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+
+    h3 {
+        @include flex-center();
+        gap: 8px;
+        margin-bottom: 32px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+        color: #006FA7;
+
+        img {
+            width: 32px;
+        }
+    }
+
+    ul {
+        gap: 8px;
+
+        li {
+            @include flex-center();
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        b, span {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 26px;
+            color: #000000;
+        }
+
+        span {
+            font-weight: 400;
+        }
+    }
+}
+// balance_card
 
 
 

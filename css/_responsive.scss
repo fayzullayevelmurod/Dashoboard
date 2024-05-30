@@ -26,7 +26,7 @@
 @media only screen and (max-width: 1200px) {
 
     .offers_block_in {
-        margin: 0;
+        margin: 10px 0;
     }
 
     .block_title {
@@ -125,4 +125,30 @@
         
     }
     
+
+    .balance_card {
+        max-width: 100%;
+        border-radius: 0;
+        padding: 24px 8px;
+
+        h3 {
+            margin-bottom: 24px;
+
+            span {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+        ul {
+            li {
+                gap: 8px;
+            }
+
+            b,span {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
 }

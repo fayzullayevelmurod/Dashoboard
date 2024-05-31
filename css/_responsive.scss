@@ -151,4 +151,24 @@
             }
         }
     }
+
+    .education {
+        padding: 24px 8px 52px 8px;
+
+        h4 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+
+        span {
+            display: inline;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
 }

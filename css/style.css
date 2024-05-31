@@ -546,6 +546,33 @@ header .avatar_text .avatar_text_bottom {
   font-weight: 400;
 }
 
+.education {
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 10px;
+}
+.education h4 {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.education ul {
+  padding-left: 50px;
+  gap: 16px;
+}
+.education a {
+  gap: 8px;
+}
+.education span {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #006FA7;
+}
+
 @media only screen and (max-width: 1400px) {
   .offers .offer_card_block {
     gap: 20px;
@@ -653,5 +680,21 @@ header .avatar_text .avatar_text_bottom {
   .balance_card ul b, .balance_card ul span {
     font-size: 14px;
     line-height: 20px;
+  }
+  .education {
+    padding: 24px 8px 52px 8px;
+  }
+  .education h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .education ul {
+    padding-left: 0;
+  }
+  .education span {
+    display: inline;
+    font-size: 18px;
+    line-height: 26px;
   }
 }/*# sourceMappingURL=style.css.map */

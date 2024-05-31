@@ -663,6 +663,100 @@ header .line {
   color: #006FA7;
 }
 
+.referral_in {
+  border-radius: 10px;
+  padding: 52px 40px;
+  background: #fff;
+}
+.referral_in .referral_top {
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.referral_in .referral_top h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+.referral_in .referral_text h4 {
+  margin-bottom: 40px;
+}
+.referral_in .referral_copy {
+  gap: 16px;
+}
+.referral_in .referral_copy input {
+  width: 430px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background: #EFFAFF;
+  border: none;
+  height: 50px;
+}
+.referral_in .referral_copy .main_btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 50px;
+}
+.referral_in .referral_copy .main_btn span {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+.referral_in .reward {
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 33px 29px;
+  background: #E9F3FF;
+}
+.referral_in .reward h4 {
+  color: #006FA7;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #87B7FF;
+  margin-bottom: 16px;
+}
+.referral_in .reward ul {
+  gap: 16px;
+}
+.referral_in .reward ul li {
+  gap: 60px;
+}
+.referral_in .reward ul span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000000;
+}
+.referral_in .referral_bottom h4 {
+  margin-bottom: 24px;
+}
+.referral_in .referral_cards {
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0 10px;
+}
+.referral_in .referral_card {
+  width: calc(50% - 12px);
+  padding: 22px 34px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  gap: 9px;
+}
+.referral_in .referral_card span, .referral_in .referral_card b {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #000;
+}
+.referral_in .referral_card b {
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 1400px) {
   .offers .offer_card_block {
     gap: 20px;

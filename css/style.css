@@ -710,6 +710,7 @@ header .line {
   border-radius: 10px;
   padding: 33px 29px;
   background: #E9F3FF;
+  border: 1px solid rgb(229, 229, 229);
 }
 .referral_in .reward h4 {
   color: #006FA7;
@@ -767,6 +768,13 @@ header .line {
   header ul a span {
     font-size: 18px;
     line-height: 22px;
+  }
+  .referral_in .referral_copy {
+    align-items: start !important;
+    flex-direction: column;
+  }
+  .referral_in .reward ul li {
+    gap: 20px;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -915,5 +923,46 @@ header .line {
   .transactions_cards a, .transactions_cards span {
     font-size: 14px;
     line-height: 20px;
+  }
+  .referral_in {
+    padding: 24px 8px;
+  }
+  .referral_in .referral_cards {
+    gap: 16px;
+  }
+  .referral_in .referral_card {
+    width: 100%;
+  }
+  .referral_in .referral_copy input {
+    width: 100%;
+  }
+  .referral_in .referral_text {
+    width: 100%;
+  }
+  .referral_in .referral_text h4 {
+    margin-bottom: 16px;
+  }
+  .referral_in .referral_top {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  .referral_in .reward {
+    padding: 16px 22px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .referral_in .reward h4 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .referral_in .reward ul span {
+    font-size: 16px;
+  }
+  .referral_in .referral_card {
+    padding: 24px;
+  }
+  .referral_in .referral_card span, .referral_in .referral_card b {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

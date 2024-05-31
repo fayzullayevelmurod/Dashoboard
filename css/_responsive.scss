@@ -16,6 +16,21 @@
             }
         }
     }
+
+    .referral_in {
+        .referral_copy {
+            align-items: start !important;
+            flex-direction: column;
+        }
+
+        .reward {
+            ul {
+                li {
+                    gap: 20px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -216,6 +231,63 @@
         a ,span {
             font-size: 14px;
             line-height: 20px;
+        }
+    }
+
+    .referral_in {
+        padding: 24px 8px;
+
+        .referral_cards {
+            gap: 16px;
+        }
+
+        .referral_card {
+            width: calc(100%);
+        }
+
+        .referral_copy {
+            input {
+                width: 100%;
+            }
+        }
+
+        .referral_text {
+            width: 100%;
+            h4 {
+                margin-bottom: 16px;
+            }
+        }
+
+        .referral_top {
+            flex-direction: column;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .reward {
+            padding: 16px 22px;
+            width: 100%;
+            max-width: 100%;
+
+            h4 {
+                font-size: 18px;
+                line-height: 26px;
+            }
+
+            ul {
+                span {
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+        .referral_card {
+            padding: 24px;
+
+            span, b {
+                font-size: 16px;
+            }
         }
     }
 }

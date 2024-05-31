@@ -368,12 +368,16 @@ header {
   padding: 10px 61px;
   background: #272E3B;
   min-width: 100%;
+  gap: 5px;
 }
 header .header_burger {
   display: none;
 }
 header .avatar {
   gap: 16px;
+}
+header .avatar_img {
+  flex-shrink: 0;
 }
 header .avatar_text {
   text-align: right;
@@ -397,8 +401,38 @@ header .avatar_text span {
 }
 header .avatar_text .avatar_text_bottom {
   gap: 24px;
+  justify-content: end;
+}
+header ul {
+  gap: 32px;
+}
+header ul a img {
+  display: none;
+}
+header ul a span {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  transition: 0.3s ease;
+}
+header ul a span:hover {
+  color: #87B7FF;
+}
+header ul a span.active {
+  color: #87B7FF;
+}
+header .line {
+  height: 40px;
+  width: 1px;
+  border-radius: 1px;
+  background: #EFFAFF;
 }
 
+.offers .article_title {
+  max-width: 850px;
+}
 .offers .offers_block {
   width: 100%;
 }
@@ -572,10 +606,73 @@ header .avatar_text .avatar_text_bottom {
   line-height: 26px;
   color: #006FA7;
 }
+.education .article_list {
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.education .article_list li {
+  list-style-type: decimal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+.education .article_title {
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+.education .list_one {
+  margin-bottom: 32px;
+}
+
+.transactions_cards {
+  margin-bottom: 24px;
+  gap: 32px 59px;
+  flex-wrap: wrap;
+}
+.transactions_cards .transactions_card {
+  width: calc(50% - 30px);
+  padding: 33px 34px;
+  gap: 8px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.transactions_cards span, .transactions_cards a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+.transactions_cards a {
+  color: #006FA7;
+}
+.transactions_cards .blue_number {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #006FA7;
+}
 
 @media only screen and (max-width: 1400px) {
   .offers .offer_card_block {
     gap: 20px;
+  }
+  header ul {
+    gap: 15px;
+  }
+  header ul a span {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -613,9 +710,24 @@ header .avatar_text .avatar_text_bottom {
   }
   header {
     padding: 20px 8px;
+    gap: 23px;
   }
   header .header_burger {
     display: flex;
+  }
+  header .line {
+    display: none;
+  }
+  header ul {
+    gap: 50px;
+  }
+  header ul a span {
+    display: none;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  header ul a img {
+    display: block;
   }
   .avatar_text {
     display: none;
@@ -682,7 +794,7 @@ header .avatar_text .avatar_text_bottom {
     line-height: 20px;
   }
   .education {
-    padding: 24px 8px 52px 8px;
+    padding: 24px 8px;
   }
   .education h4 {
     margin-bottom: 20px;
@@ -696,5 +808,18 @@ header .avatar_text .avatar_text_bottom {
     display: inline;
     font-size: 18px;
     line-height: 26px;
+  }
+  .transactions_cards {
+    padding: 24px 2px;
+    margin: 0 8px;
+    background: #fff;
+  }
+  .transactions_cards .transactions_card {
+    padding: 37px 29px;
+    width: 100%;
+  }
+  .transactions_cards a, .transactions_cards span {
+    font-size: 14px;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,8 +1,19 @@
 @media only screen and (max-width: 1400px) {
     .offers {
-
         .offer_card_block {
             gap: 20px;
+        }
+    }
+
+    header {
+        ul {
+            gap: 15px;
+            a {
+                span {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
         }
     }
 }
@@ -58,9 +69,29 @@
 
     header {
         padding: 20px 8px;
+        gap: 23px;
 
         .header_burger {
             display: flex;
+        }
+
+        .line {
+            display: none;
+        }
+
+        ul {
+            gap: 50px;
+            a {
+                span {
+                    display: none;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+
+                img {
+                    display: block;
+                }
+            }
         }
     }
 
@@ -153,7 +184,7 @@
     }
 
     .education {
-        padding: 24px 8px 52px 8px;
+        padding: 24px 8px;
 
         h4 {
             margin-bottom: 20px;
@@ -169,6 +200,22 @@
             display: inline;
             font-size: 18px;
             line-height: 26px;
+        }
+    }
+
+    .transactions_cards {
+        padding: 24px 2px;
+        margin: 0 8px;
+        background: #fff;
+
+        .transactions_card {
+            padding: 37px 29px;
+            width: calc(100%);
+        }
+
+        a ,span {
+            font-size: 14px;
+            line-height: 20px;
         }
     }
 }

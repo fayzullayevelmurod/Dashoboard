@@ -335,7 +335,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .balance_rquest_table {
-        width: 768px;
+    .balance_rquest_table_wrapper {
+        width: 100%;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
+
+    .balance_rquest_table {
+        min-width: 700px;
+    }
+
 } 

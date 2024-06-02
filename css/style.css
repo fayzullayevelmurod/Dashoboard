@@ -765,8 +765,6 @@ header .line {
 .balance_rquest_table {
   background: #fff;
   border-radius: 10px;
-  overflow: scroll;
-  width: 1480px;
   padding-bottom: 31px;
 }
 .balance_rquest_table .number,
@@ -1107,7 +1105,14 @@ header .line {
   }
 }
 @media only screen and (max-width: 768px) {
+  .balance_rquest_table_wrapper {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .balance_rquest_table_wrapper::-webkit-scrollbar {
+    display: none;
+  }
   .balance_rquest_table {
-    width: 768px;
+    min-width: 700px;
   }
 }/*# sourceMappingURL=style.css.map */

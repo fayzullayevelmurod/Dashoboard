@@ -971,6 +971,7 @@ header {
     }
 
     .table_head {
+        border-bottom: 1px solid rgb(135, 183, 255);
         gap: 100px;
         padding: 16px;
         span {
@@ -982,6 +983,7 @@ header {
     }
 
     .table_body {
+        border-bottom: 1px solid rgb(135, 183, 255);
         gap: 100px;
         padding: 16px;
         span {

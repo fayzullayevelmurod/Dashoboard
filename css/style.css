@@ -787,6 +787,7 @@ header .line {
   background: #F2F2F2;
 }
 .balance_rquest_table .table_head {
+  border-bottom: 1px solid rgb(135, 183, 255);
   gap: 100px;
   padding: 16px;
 }
@@ -797,6 +798,7 @@ header .line {
   color: #4E4E4E;
 }
 .balance_rquest_table .table_body {
+  border-bottom: 1px solid rgb(135, 183, 255);
   gap: 100px;
   padding: 16px;
 }
@@ -1072,6 +1074,20 @@ header .line {
   .referral_in .referral_card span, .referral_in .referral_card b {
     font-size: 16px;
   }
+  .balance_rquest_table {
+    width: 100%;
+    border-radius: 0;
+  }
+  .balance_rquest_table .medium_block {
+    width: 150px;
+  }
+  .balance_rquest_table .end_block {
+    width: 350px;
+  }
+  .balance_rquest_table .table_body,
+  .balance_rquest_table .table_head {
+    gap: 8px;
+  }
   .settings_integrations {
     flex-direction: column;
     padding: 24px 8px;
@@ -1088,5 +1104,10 @@ header .line {
   .settings_integrations .settings_integrations_left label,
   .settings_integrations .settings_integrations_right label {
     margin-top: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .balance_rquest_table {
+    width: 768px;
   }
 }/*# sourceMappingURL=style.css.map */

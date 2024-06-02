@@ -807,6 +807,61 @@ header .line {
   line-height: 22px;
 }
 
+.settings_integrations {
+  border-radius: 10px;
+  background: #fff;
+  padding: 60px 40px;
+  display: flex;
+  gap: 250px;
+}
+.settings_integrations h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.settings_integrations .settings_integrations_left {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+}
+.settings_integrations .settings_integrations_left label {
+  color: rgb(78, 78, 78);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -1%;
+  margin-bottom: 6px;
+  color: rgb(78, 78, 78);
+  margin-top: 16px;
+}
+.settings_integrations .settings_integrations_left input {
+  padding: 14px 15px;
+  box-sizing: border-box;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  background: rgb(242, 242, 242);
+  color: rgb(78, 78, 78);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.settings_integrations .settings_integrations_right {
+  width: 470px;
+}
+.settings_integrations .settings_integrations_right input {
+  width: 100%;
+  margin-top: 16px;
+  background: #E9F3FF;
+  padding: 14px 15px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 @media only screen and (max-width: 1400px) {
   .offers .offer_card_block {
     gap: 20px;
@@ -824,6 +879,9 @@ header .line {
   }
   .referral_in .reward ul li {
     gap: 20px;
+  }
+  .settings_integrations {
+    gap: 32px;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -1013,5 +1071,22 @@ header .line {
   }
   .referral_in .referral_card span, .referral_in .referral_card b {
     font-size: 16px;
+  }
+  .settings_integrations {
+    flex-direction: column;
+    padding: 24px 8px;
+    border-radius: 0;
+  }
+  .settings_integrations h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .settings_integrations .settings_integrations_left,
+  .settings_integrations .settings_integrations_right {
+    width: 100%;
+  }
+  .settings_integrations .settings_integrations_left label,
+  .settings_integrations .settings_integrations_right label {
+    margin-top: 24px;
   }
 }/*# sourceMappingURL=style.css.map */

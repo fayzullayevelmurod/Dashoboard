@@ -31,6 +31,10 @@
             }
         }
     }
+
+    .settings_integrations {
+        gap: 32px;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -287,6 +291,26 @@
 
             span, b {
                 font-size: 16px;
+            }
+        }
+    }
+
+    .settings_integrations {
+        flex-direction: column;
+        padding: 24px 8px;
+        border-radius: 0;
+
+        h3 {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        .settings_integrations_left,
+        .settings_integrations_right {
+            width: 100%;
+
+            label {
+                margin-top: 24px;
             }
         }
     }

@@ -994,5 +994,66 @@ header {
 }
 // balance_request_table
 
+// settings_integrations
+.settings_integrations {
+    border-radius: 10px;
+    background: #fff;
+    padding: 60px 40px;
+    display: flex;
+    gap: 250px;
+
+    h3 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        color: #000000;
+    }
+
+    .settings_integrations_left {
+        display: flex;
+        flex-direction: column;
+        width: 470px;
+
+        label {
+            color: rgb(78, 78, 78);
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: -1%;
+            margin-bottom: 6px;
+            color: rgb(78, 78, 78);
+            margin-top: 16px;
+        }
+
+        input {
+            padding: 14px 15px;
+            box-sizing: border-box;
+            border: 1px solid rgb(229, 229, 229);
+            border-radius: 10px;
+            background: rgb(242, 242, 242);
+            color: rgb(78, 78, 78);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    .settings_integrations_right {
+        width: 470px;
+        input {
+            width: 100%;
+            margin-top: 16px;
+            background: #E9F3FF;
+            padding: 14px 15px;
+            border: 1px solid rgb(229, 229, 229);
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+}
+// settings_integrations
 
 @import './responsive';

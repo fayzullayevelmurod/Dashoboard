@@ -758,6 +758,55 @@ header .line {
   font-weight: 600;
 }
 
+.balance_rquest_table_in {
+  overflow: hidden;
+}
+
+.balance_rquest_table {
+  background: #fff;
+  border-radius: 10px;
+  overflow: scroll;
+  width: 1480px;
+  padding-bottom: 31px;
+}
+.balance_rquest_table .number,
+.balance_rquest_table .medium_block,
+.balance_rquest_table .end_block {
+  text-align: center;
+}
+.balance_rquest_table .number {
+  width: 30px;
+}
+.balance_rquest_table .medium_block {
+  width: 300px;
+}
+.balance_rquest_table .end_block {
+  width: 500px;
+}
+.balance_rquest_table li:nth-child(even) {
+  background: #F2F2F2;
+}
+.balance_rquest_table .table_head {
+  gap: 100px;
+  padding: 16px;
+}
+.balance_rquest_table .table_head span {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #4E4E4E;
+}
+.balance_rquest_table .table_body {
+  gap: 100px;
+  padding: 16px;
+}
+.balance_rquest_table .table_body span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 22px;
+}
+
 @media only screen and (max-width: 1400px) {
   .offers .offer_card_block {
     gap: 20px;

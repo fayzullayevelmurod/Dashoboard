@@ -977,7 +977,6 @@ header .line {
   line-height: 22px;
 }
 .add_article textarea {
-  overflow: hidden;
   resize: none;
   height: 420px;
   font-size: 16px;
@@ -991,6 +990,9 @@ header .line {
 }
 .add_article textarea:focus {
   outline: none;
+}
+.add_article textarea::-webkit-scrollbar {
+  display: none;
 }
 .add_article .main_btn {
   margin-left: auto;

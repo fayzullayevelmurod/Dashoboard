@@ -1198,7 +1198,6 @@ header {
     }
 
     textarea {
-        overflow: hidden;
         resize: none;
         height: 420px;
         font-size: 16px;
@@ -1212,6 +1211,10 @@ header {
 
         &:focus {
             outline: none;
+        }
+        
+        &::-webkit-scrollbar {
+            display: none;
         }
     }
 

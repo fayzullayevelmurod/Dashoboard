@@ -962,6 +962,41 @@ header .line {
   color: #006FA7;
 }
 
+.add_article {
+  gap: 32px;
+}
+.add_article .textarea_one {
+  height: 50px;
+  padding: 14px 19px;
+  border: 1px solid rgb(242, 242, 242);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  color: rgb(78, 78, 78);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.add_article textarea {
+  overflow: hidden;
+  resize: none;
+  height: 420px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 23px 19px;
+  color: #4E4E4E;
+  border: 1px solid rgb(242, 242, 242);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
+.add_article textarea:focus {
+  outline: none;
+}
+.add_article .main_btn {
+  margin-left: auto;
+  width: 162px;
+}
+
 @media only screen and (max-width: 1560px) {
   .offers_cards .offers_card {
     width: calc(33.3333333333% - 18px);
@@ -1213,6 +1248,19 @@ header .line {
   }
   .offers_cards {
     padding: 0 8px;
+  }
+  .add_article {
+    padding: 0 8px;
+    gap: 24px;
+  }
+  .add_article .textarea_one {
+    height: 94px;
+  }
+  .add_article textarea {
+    height: 550px;
+  }
+  .add_article .main_btn {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {

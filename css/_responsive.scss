@@ -350,6 +350,23 @@
     .offers_cards {
         padding: 0 8px;
     }
+
+    .add_article {
+        padding: 0 8px;
+        gap: 24px;
+
+        .textarea_one {
+            height: 94px;
+        }
+
+        textarea {
+            height: 550px;
+        }
+
+        .main_btn {
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {

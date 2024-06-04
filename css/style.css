@@ -1025,6 +1025,7 @@ header .line {
   display: flex;
   align-items: center;
   gap: 8px;
+  justify-content: start;
 }
 .fixation_cards ul span {
   font-size: 16px;
@@ -1075,6 +1076,11 @@ header .line {
   background: #FFEEF3;
 }
 
+@media only screen and (max-width: 1600px) {
+  .fixation_cards .fixation_card {
+    width: calc(33.3333333333% - 18px);
+  }
+}
 @media only screen and (max-width: 1560px) {
   .offers_cards .offers_card {
     width: calc(33.3333333333% - 18px);
@@ -1112,8 +1118,17 @@ header .line {
   .offers_cards .offers_card {
     width: calc(50% - 13px);
   }
+  .fixation_cards {
+    gap: 16px;
+  }
+  .fixation_cards .fixation_card {
+    width: calc(50% - 13px);
+  }
 }
 @media only screen and (max-width: 1200px) {
+  .fixation_cards {
+    padding: 0 8px;
+  }
   .offers_block_in {
     margin: 10px 0;
   }
@@ -1364,5 +1379,8 @@ header .line {
   .offers_cards .offers_card_content h3 {
     font-size: 16px;
     line-height: 20px;
+  }
+  .fixation_cards .fixation_card {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

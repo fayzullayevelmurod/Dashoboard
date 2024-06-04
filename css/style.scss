@@ -1253,6 +1253,7 @@ header {
         li {
             @include flex-center();
             gap: 8px;
+            justify-content: start;
         }
 
         span {

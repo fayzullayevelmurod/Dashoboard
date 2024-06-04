@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1600px) {
+    .fixation_cards {
+        .fixation_card {
+            width: calc(100% / 3 - 18px);
+        }
+    }
+}
+
 @media only screen and (max-width: 1560px) {
     .offers_cards {
         .offers_card {
@@ -65,9 +73,21 @@
             width: calc(100% / 2 - 13px);
         }
     }
+
+    .fixation_cards {
+        gap: 16px;
+    
+        .fixation_card {
+            width: calc(100% / 2 - 13px);
+        }
+    }
 }
 
 @media only screen and (max-width: 1200px) {
+
+    .fixation_cards {
+        padding: 0 8px;
+    }
 
     .offers_block_in {
         margin: 10px 0;
@@ -398,4 +418,10 @@
         }
     }
 
+    .fixation_cards {
+        
+        .fixation_card {
+            width: calc(100%);
+        }
+    }
 } 

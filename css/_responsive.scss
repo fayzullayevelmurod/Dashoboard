@@ -4,6 +4,17 @@
             width: calc(100% / 3 - 18px);
         }
     }
+
+    .partner_table {
+        width: 100%;
+        border-radius: 0;
+
+        .table_body,
+        .table_head {
+            gap: 6px;
+            padding: 8px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1560px) {
@@ -385,6 +396,24 @@
 
         .main_btn {
             width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .partner_table_wrapper {
+        width: 100%;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .partner_table {
+        min-width: 980px;
+
+        span {
+            white-space: nowrap;
         }
     }
 }

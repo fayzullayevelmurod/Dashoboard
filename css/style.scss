@@ -1316,4 +1316,81 @@ header {
 }
 // fixation
 
+.partner_table {
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 46px;
+
+    .number {
+        width: 20px;
+    }
+
+    .list_img {
+        width: 50px;
+    }
+
+    .name_block {
+        width: 100px;
+    }
+
+    .surname_block {
+        width: 100px;
+    }
+
+    .phone_block {
+        width: 150px;
+    }
+
+    .link_block {
+        width: 70px;
+    }
+
+    .fixation_block {
+        width: 90px;
+    }
+
+    .table_head {
+        text-align: center;
+        padding: 16px;
+        gap: 37px;
+        border-bottom: 1px solid rgb(135, 183, 255);
+
+        span {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 20px;
+            color: #4E4E4E;
+        }
+    }
+
+    .table_body {
+        border-bottom: 1px solid rgb(135, 183, 255);
+        padding: 16px;
+        text-align: center;
+        gap: 37px;
+        @include transition();
+
+        span,
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #000000;
+        }
+
+        &:hover {
+            background: #E9F3FF;
+        }
+    }
+
+    .table_body:nth-child(even) {
+        background: #F2F2F2;
+
+        &:hover {
+            background: #E9F3FF;
+        }
+    }
+
+}
+
 @import './responsive';

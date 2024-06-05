@@ -546,6 +546,12 @@ header .line {
   background: #EFFAFF;
 }
 
+.offers .title_top {
+  gap: 27px;
+}
+.offers .title_select {
+  width: 300px;
+}
 .offers .article_title {
   max-width: 850px;
 }

@@ -1138,6 +1138,77 @@ header .line {
   background: #E9F3FF;
 }
 
+.partners_profile {
+  margin-bottom: 24px;
+  padding: 53px 40px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  gap: 100px;
+}
+.partners_profile h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #000000;
+}
+.partners_profile .partners_profile_left,
+.partners_profile .partners_profile_right {
+  width: 50%;
+  gap: 16px;
+}
+.partners_profile .partners_profile_left .profile_img,
+.partners_profile .partners_profile_right .profile_img {
+  width: 180px;
+  height: 130px;
+}
+.partners_profile ul {
+  gap: 16px;
+}
+.partners_profile ul li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+}
+.partners_profile ul strong {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #000;
+}
+.partners_profile ul span, .partners_profile ul a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000;
+}
+
+.profile_transaction {
+  padding: 50px 40px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.profile_table .table_body,
+.profile_table .table_head {
+  gap: 9px;
+}
+.profile_table .date_block {
+  width: 150px;
+}
+.profile_table .title_block {
+  width: 200px;
+}
+.profile_table .link_block {
+  width: 400px;
+}
+.profile_table .share_block {
+  width: 90px;
+}
+.profile_table .end_block {
+  width: 70px;
+}
+
 @media only screen and (max-width: 1600px) {
   .fixation_cards .fixation_card {
     width: calc(33.3333333333% - 18px);

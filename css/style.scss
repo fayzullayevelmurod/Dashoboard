@@ -1393,4 +1393,87 @@ header {
 
 }
 
+.partners_profile {
+    margin-bottom: 24px;
+    padding: 53px 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    gap: 100px;
+
+    h4 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    .partners_profile_left,
+    .partners_profile_right {
+        width: calc(100% / 2);
+        gap: 16px;
+
+        .profile_img {
+            width: 180px;
+            height: 130px;
+        }
+    }
+
+    ul {
+        gap: 16px;
+
+        li {
+            @include flex-center();
+            justify-content: start;
+            gap: 16px;
+        }
+
+        strong {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 26px;
+            color: #000;
+        }
+
+        span,a {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #000;
+        }
+    }
+}
+
+.profile_transaction {
+    padding: 50px 40px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.profile_table {
+    .table_body,
+    .table_head {
+        gap: 9px;
+    }
+
+    .date_block {
+        width: 150px;
+    }
+
+    .title_block {
+        width: 200px;
+    }
+
+    .link_block {
+        width: 400px;
+    }
+
+    .share_block {
+        width: 90px;
+    }
+
+    .end_block {
+        width: 70px;
+    }
+}
+
 @import './responsive';

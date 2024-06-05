@@ -317,15 +317,15 @@ aside {
             }
 
             &:hover {
-                background: #006FA7;
-                color: #fff;
+                background: rgba(0, 111, 167, 0.1);
+                color: rgb(0, 0, 0);
 
-                svg {
-                    path {
-                        fill: #fff;
-                        stroke: #fff;
-                    }
-                }
+                // svg {
+                //     path {
+                //         fill: #fff;
+                //         stroke: #fff;
+                //     }
+                // }
             }
         }
 
@@ -453,6 +453,10 @@ aside {
     width: 400px;
     border: 1px solid rgb(229, 229, 229);
     border-radius: 10px;
+  }
+
+  .select.active {
+    border: 1px solid #87B7FF;
   }
   .select .selectBtn {
     padding: 13px 16px;

@@ -255,12 +255,8 @@ aside ul a svg path {
   transition: 0.3s ease;
 }
 aside ul a:hover {
-  background: #006FA7;
-  color: #fff;
-}
-aside ul a:hover svg path {
-  fill: #fff;
-  stroke: #fff;
+  background: rgba(0, 111, 167, 0.1);
+  color: rgb(0, 0, 0);
 }
 aside ul .active {
   background: #006FA7;
@@ -359,6 +355,10 @@ aside .aside_bottom {
   width: 400px;
   border: 1px solid rgb(229, 229, 229);
   border-radius: 10px;
+}
+
+.select.active {
+  border: 1px solid #87B7FF;
 }
 
 .select .selectBtn {

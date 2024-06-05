@@ -141,25 +141,41 @@ label {
     background-image: url('../images/main_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     height: 100vh;
 
-    &_form {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .swiper {
         width: 400px;
+
+        &-slide:not(.swiper-slide-active) {
+            height: 0;
+            overflow: hidden;
+        }
+    }
+
+    &_form {
+        width: 100%;
         border-radius: 10px;
         padding: 55px 40px;
         background: #fff;
-    }
 
+        &.successfully {
+            min-height: 550px;
+
+            h6 {
+                white-space: nowrap;
+            }
+        }
+    }
+    
     .header_logo {
         width: 200px;
         height: 50px;
         margin-bottom: 24px;
     }
-
+    
     form {
+        width: 100%;
         gap: 16px;
     }
 
@@ -172,8 +188,11 @@ label {
     }
 
     .main_btn {
-        width: 133px;
+        width: auto;
+        display: inline-flex;
+        height: auto;
         margin: 0 auto;
+        padding: 11px 40px;
     }
 
     label {
@@ -182,6 +201,28 @@ label {
         background: rgb(242, 242, 242);
         padding: 13px 14px;
         gap: 4px;
+        position: relative;
+        width: 100%;
+
+        &.focus {
+            border-color: #87B7FF;
+        }
+
+        &.error {
+            border-color: #BB0000;
+
+            .icon_clear {
+                display: block;
+            }
+        }
+
+        &.success {
+            border-color: #42984B;
+
+            .icon_check {
+                display: block;
+            }
+        }
 
         input {
             background: transparent;
@@ -190,8 +231,18 @@ label {
             font-weight: 400;
             line-height: 22px;
             letter-spacing: -0.01em;
+            width: calc(100% - 50px);
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            transform: translateY(-50%);
+            display: none;
         }
     }
+
 
     p {
         font-size: 16px;
@@ -203,6 +254,15 @@ label {
         a {
             color: #006FA7;
         }
+    }
+
+    .error-text {
+        font-size: 13px;
+        font-weight: 20px;
+        letter-spacing: -1%;
+        font-weight: 400;
+        color: #BB0000;
+        display: none;
     }
     
     .line {
@@ -548,6 +608,467 @@ header {
     }
 }
 // header
+
+// Fixation modal
+.fixation_modal {
+    z-index: 5;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    &__bg {
+        background: #006FA7;
+        opacity: 0.3;
+    }
+
+    &__content {
+        background: #fff;
+        width: 500px;
+        box-shadow: -8px 0 15px rgba(0, 0, 0, 0.15);
+        
+        form {
+            padding: 70px 50px;
+            height: 100%;
+            width: 100%;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+        }
+
+        button {
+            top: 16px;
+            left: 16px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 45px;
+            letter-spacing: -1%;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #4E4E4E;
+        }
+
+        .inputs {
+            gap: 32px;
+            margin-bottom: 40px;
+        }
+
+        .input {
+            label {
+                display: block;
+                margin-bottom: 6px;
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 500;
+                letter-spacing: -1%;
+                color: #4E4E4E;
+            }
+
+            input {
+                width: 100%;
+                border: 1px solid #E5E5E5;
+                padding: 14px 16px;
+                border-radius: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 33px;
+                color: #4E4E4E;
+                background: #F2F2F2;
+
+                &::placeholder {
+                    color: #4E4E4E;
+                }
+            }
+        }
+    }
+
+    &.active {
+        display: flex;
+
+        .fixation_modal {
+            @keyframes bgActive {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 0.3;
+                }
+            }
+
+            &__bg {
+                animation: bgActive .3s linear 1;
+            }
+
+            @keyframes contentActive {
+                from {
+                    transform: translateX(100%);
+                }
+                to {
+                    transform: translateX(0);
+                }
+            }
+
+            &__content {
+                animation: contentActive .3s linear 1;
+            }
+        }
+    }
+
+    &.end-active {
+        display: flex;
+
+        .fixation_modal {
+            @keyframes bgEndActive {
+                from {
+                    opacity: 0.3;
+                }
+                to {
+                    opacity: 0;
+                }
+            }
+
+            &__bg {
+                opacity: 0;
+                animation: bgEndActive .3s linear 1;
+            }
+
+            @keyframes contentEndActive {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(100%);
+                }
+            }
+
+            &__content {
+                transform: translateX(100%);
+                animation: contentEndActive .3s linear 1;
+            }
+        }
+    }
+}
+// Fixation modal end
+
+// Fixation-one
+.fixation_one {
+    padding: 40px 68px 37px 54px;
+
+    h2 {
+        font-size: 32px;
+        line-height: 45px;
+        font-weight: 600;
+    }
+
+    &__head {
+        margin-bottom: 24px;
+
+        .btns {
+            gap: 8px;
+        }
+
+        .main_btn {
+            height: 50px;
+            padding: 0 32px;
+            font-size: 24px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+        }
+
+        .btn_light {
+            padding: 15px 23px;
+            border-radius: 10px;
+            border: 1px solid #006FA7;
+            color: #006FA7;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+
+            svg {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        border-radius: 20px;
+        background: #fff;
+        padding: 53px 40px;
+
+        .datas {
+            gap: 109px;
+            margin-bottom: 60px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                width: 100%;
+
+                &:nth-child(1) {
+                    width: 620px;
+                    flex-shrink: 0;
+
+                    li:last-child {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                }
+
+                .title {
+                    font-size: 24px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    color: #000000;
+                }
+
+                h4 {
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #000000;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    color: #000;
+                }
+
+                .text_blue {
+                    color: #006FA7;
+                }
+
+                .edit_btn {
+                    background: #DFFFEA;
+                    padding: 3px 16px;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    color: #5FB669;
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .fixation_lists {
+        gap: 32px 59px;
+
+        &__item {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #E5E5E5;
+            border-radius: 10px;
+            width: calc(50% - 29.5px);
+            padding: 33px 34px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                li {
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                }
+
+                .text_blue {
+                    color: #006FA7;
+                }
+
+                b {
+                    color: #006FA7;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &__head {
+            margin-bottom: 32px;
+
+            h3 {
+                font-size: 24px;
+                line-height: 28px;
+                font-weight: 500;
+            }
+
+            .btn_light {
+                border: 1px solid #006FA7;
+                color: #006FA7;
+                border-radius: 10px;
+                padding: 8px 32px;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                font-size: 24px;
+                line-height: 28px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+// Fixation-one end
+
+// Add fixation modal
+.add_fixation_modal {
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    &__bg {
+        left: 0;
+        top: 0;
+        background: #006FA7;
+        opacity: 0.3;
+    }
+
+    &__close {
+        top: 16px;
+        left: 16px;
+    }
+
+    &__content {
+        background: #fff;
+        width: 500px;
+        padding: 69px 50px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        h2 {
+            font-size: 32px;
+            line-height: 45px;
+            font-weight: 600;
+        }
+
+        .inputs {
+            width: 100%;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            width: 100%;
+        }
+
+        label {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #4E4E4E;
+        }
+
+        input {
+            border-radius: 10px;
+            border: 1px solid #E5E5E5;
+            background: #F2F2F2;
+            font-size: 16px;
+            line-height: 22px;
+            color: #4E4E4E;
+            padding: 15px 16px;
+        }
+    }
+
+    &.active {
+        display: flex;
+
+        .add_fixation_modal {
+            @keyframes bgActive {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 0.3;
+                }
+            }
+
+            &__bg {
+                animation: bgActive .3s linear 1;
+            }
+
+            @keyframes contentActive {
+                from {
+                    transform: translateX(100%);
+                }
+                to {
+                    transform: translateX(0);
+                }
+            }
+
+            &__content {
+                animation: contentActive .3s linear 1;
+            }
+        }
+    }
+
+    &.end-active {
+        display: flex;
+
+        .add_fixation_modal {
+            @keyframes bgEndActive {
+                from {
+                    opacity: 0.3;
+                }
+                to {
+                    opacity: 0;
+                }
+            }
+
+            &__bg {
+                opacity: 0;
+                animation: bgEndActive .3s linear 1;
+            }
+
+            @keyframes contentEndActive {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(100%);
+                }
+            }
+
+            &__content {
+                transform: translateX(100%);
+                animation: contentEndActive .3s linear 1;
+            }
+        }
+    }
+}
+// Add fixation modal end
 
 // offers
 .offers {

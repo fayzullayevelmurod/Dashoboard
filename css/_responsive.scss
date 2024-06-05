@@ -14,6 +14,22 @@
     }
 }
 
+@media only screen and (max-width: 1520px) {
+    .fixation_one {
+        &__content {
+            .datas {
+                gap: 30px;
+
+                ul {
+                    &:nth-child(1) {
+                        width: 450px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1400px) {
     .offers {
         .offer_card_block {
@@ -389,6 +405,120 @@
     }
 }
 
+@media only screen and (max-width: 992px) {
+    .fixation_one {
+        padding: 28px 0px 43px;
+
+        h2 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        &__head {
+            padding: 0px 8px;
+
+            .main_btn {
+                padding: 0;
+                width: 40px;
+                height: 40px;
+
+                span {
+                    display: none;
+                }
+            }
+
+            .btn_light {
+                padding: 0;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    display: block;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+
+        &__content {
+            border-radius: 0;
+            padding: 24px 8px;
+
+            .datas {
+                gap: 32px;
+                flex-direction: column;
+                margin-bottom: 32px;
+
+                ul {
+                    width: 100%;
+
+                    &:nth-child(1) {
+                        width: 100%;
+                    }
+
+                    .title {
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+
+                    h4 {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        .fixation_lists {
+            gap: 16px;
+
+            &__item {
+                width: 100%;
+                padding: 37px 29px;
+
+                ul {
+                    li {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            &__head {
+                margin-bottom: 24px;
+
+                h3 {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+
+                .btn_light {
+                    width: 88px;
+                    height: 44px;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .balance_rquest_table_wrapper {
         width: 100%;
@@ -425,3 +555,89 @@
         }
     }
 } 
+
+@media only screen and (max-width: 576px) {
+    .entrance {
+        .swiper {
+            width: calc(100% - 40px);
+        }
+
+        &_form {
+            padding: 30px 15px;
+
+            &.successfully {
+                min-height: 500px;
+    
+                h6 {
+                    white-space: wrap;
+                }
+            }
+        }
+    }
+
+    .fixation_modal {
+        &__content {
+            width: calc(100% - 40px);
+            
+
+            form {
+                width: 100%;
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            h2 {
+                width: 100%;
+                font-size: 20px;
+                line-height: 28px;
+                margin-bottom: 24px;
+            }
+
+            .inputs {
+                gap: 12px;
+                margin-bottom: 12px;
+                width: 100%;
+            }
+
+            .input {
+                input {
+                    padding: 9px 16px;
+                    line-height: 22px;
+                }
+            }
+
+            .main_btn {
+                width: 100%;
+            }
+        }
+    }
+
+    .add_fixation_modal {
+        &__content {
+            width: calc(100% - 40px);
+            padding: 72px 16px;
+
+            form {
+                gap: 12px;
+            }
+
+            h2 {
+                font-size: 20px;
+                line-height: 28px;
+                padding-bottom: 12px;
+            }
+
+            input {
+                padding: 9px 16px;
+            }
+
+            .main_btn {
+                width: 100%;
+                font-size: 24px;
+            }
+        }
+    }
+}

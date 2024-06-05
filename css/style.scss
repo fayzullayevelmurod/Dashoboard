@@ -1657,6 +1657,25 @@ header {
             height: 50px;
         }
     }
+
+    blockquote {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #000000;
+        background: #E9F3FF;
+        border-radius: 10px;
+        padding: 11px 15px;
+
+        a {
+            color: #5FB669;
+        }
+    }
+
+    .notification_btn {
+        white-space: nowrap;
+        width: 437px;
+    }
 }
 // settings_referal 
 

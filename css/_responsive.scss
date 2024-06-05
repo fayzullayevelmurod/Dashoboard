@@ -103,6 +103,11 @@
 
 @media only screen and (max-width: 1200px) {
 
+    .blue_btn {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
     .fixation_cards {
         padding: 0 8px;
     }
@@ -456,8 +461,25 @@
             }
         }
 
+        blockquote {
+            margin-bottom: 0;
+        }
+
+        .notification_btn {
+            width: 100%;
+        }
+
         .main_btn {
             width: 100%;
+        }
+
+        .change_btn {
+            height: 50px;
+        }
+
+        .logo_upload {
+            flex-direction: column;
+            align-items: start !important;
         }
     }
 }
@@ -549,6 +571,13 @@
         
         .fixation_card {
             width: calc(100%);
+        }
+    }
+
+    .settings_referal {
+        blockquote {
+            text-align: center;
+            padding: 11px 12px;
         }
     }
 } 

@@ -4,6 +4,24 @@
             width: calc(100% / 3 - 18px);
         }
     }
+
+    .partner_table {
+        width: 100%;
+
+        .table_body,
+        .table_head {
+            gap: 6px;
+            padding: 8px;
+        }
+    }
+
+    .partner_table {
+        .table_body,
+        .table_head {
+            gap: 9px;
+            padding: 16px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1560px) {
@@ -100,6 +118,11 @@
 }
 
 @media only screen and (max-width: 1200px) {
+
+    .blue_btn {
+        font-size: 18px;
+        line-height: 22px;
+    }
 
     .fixation_cards {
         padding: 0 8px;
@@ -403,6 +426,136 @@
             width: 100%;
         }
     }
+
+    .profile_transaction {
+        padding: 24px 0;
+        margin: 0;
+        justify-content: center;
+        .transactions_card {
+            width: 98%;
+        }
+    }
+    .partner_table {
+        border-radius: 0;
+    }
+
+    .settings_referal {
+        gap: 24px;
+        border-radius: 0;
+        padding: 26px 8px;
+
+        ul {
+            align-items: start;
+            gap: 24px;
+            
+            li {
+                width: 100%;
+                align-items: start !important;
+                justify-content: start;
+                flex-direction: column;
+                gap: 6px;
+            }
+
+            span {
+                text-align: left;
+                width: auto;
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+
+        .select, input {
+            width: 100%;
+            height: 40px;
+        }
+
+        .select {
+            .selectBtn {
+                padding: 9px 16px;
+            }
+        }
+
+        blockquote {
+            margin-bottom: 0;
+        }
+
+        .notification_btn {
+            width: 100%;
+        }
+
+        .main_btn {
+            width: 100%;
+        }
+
+        .change_btn {
+            height: 50px;
+        }
+
+        .logo_upload {
+            flex-direction: column;
+            align-items: start !important;
+
+            img {
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .partner_table_wrapper {
+        width: 100%;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .partner_table {
+        min-width: 980px;
+
+        span {
+            white-space: nowrap;
+        }
+    }
+
+    .profile_table {
+        min-width: 1479px;
+    }
+
+    .partners_profile {
+        flex-direction: column;
+        gap: 28px;
+        border-radius: 0;
+        padding: 24px 8px;
+
+        .partners_profile_left,
+        .partners_profile_right {
+            gap: 8px;
+
+            ul {
+                gap: 8px;
+            }
+
+            h4 {
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+            .profile_img {
+                margin-top: 20px;
+            }
+
+            span,
+            strong,
+            a {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -552,6 +705,13 @@
         
         .fixation_card {
             width: calc(100%);
+        }
+    }
+  
+  .settings_referal {
+        blockquote {
+            text-align: center;
+            padding: 11px 12px;
         }
     }
 } 

@@ -417,6 +417,49 @@
     .partner_table {
         border-radius: 0;
     }
+
+    .settings_referal {
+        gap: 24px;
+        border-radius: 0;
+        padding: 26px 8px;
+
+        ul {
+            align-items: start;
+            gap: 24px;
+            
+            li {
+                width: 100%;
+                align-items: start !important;
+                justify-content: start;
+                flex-direction: column;
+                gap: 6px;
+            }
+
+            span {
+                text-align: left;
+                width: auto;
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+
+        .select, input {
+            width: 100%;
+            height: 40px;
+        }
+
+        .select {
+            .selectBtn {
+                padding: 9px 16px;
+            }
+        }
+
+        .main_btn {
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 993px) {

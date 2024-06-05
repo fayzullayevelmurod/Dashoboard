@@ -356,7 +356,6 @@ aside .aside_bottom {
 
 .select {
   position: relative;
-  margin-bottom: 15px;
   width: 400px;
   border: 1px solid rgb(229, 229, 229);
   border-radius: 10px;
@@ -365,7 +364,7 @@ aside .aside_bottom {
 .select .selectBtn {
   padding: 13px 16px;
   box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 10px;
   width: 100%;
   cursor: pointer;
   position: relative;
@@ -409,7 +408,6 @@ aside .aside_bottom {
   background: rgb(242, 242, 242);
   border-top: 1px solid #eee;
   z-index: 1;
-  background: #fff;
   transform: scale(1, 0);
   transform-origin: top center;
   visibility: hidden;
@@ -1306,6 +1304,31 @@ header .line {
   line-height: 28px;
   color: #000000;
 }
+.settings_referal ul {
+  gap: 16px;
+}
+.settings_referal ul li {
+  gap: 16px;
+}
+.settings_referal ul span {
+  width: 300px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #4E4E4E;
+}
+.settings_referal ul input {
+  width: 400px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #4E4E4E;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  background: rgb(242, 242, 242);
+}
 .settings_referal .main_btn {
   width: 194px;
 }
@@ -1612,6 +1635,39 @@ header .line {
   }
   .partner_table {
     border-radius: 0;
+  }
+  .settings_referal {
+    gap: 24px;
+    border-radius: 0;
+    padding: 26px 8px;
+  }
+  .settings_referal ul {
+    align-items: start;
+    gap: 24px;
+  }
+  .settings_referal ul li {
+    width: 100%;
+    align-items: start !important;
+    justify-content: start;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .settings_referal ul span {
+    text-align: left;
+    width: auto;
+  }
+  .settings_referal ul input {
+    width: 100%;
+  }
+  .settings_referal .select, .settings_referal input {
+    width: 100%;
+    height: 40px;
+  }
+  .settings_referal .select .selectBtn {
+    padding: 9px 16px;
+  }
+  .settings_referal .main_btn {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 993px) {

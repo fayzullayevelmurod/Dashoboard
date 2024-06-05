@@ -448,6 +448,90 @@ aside {
 }
 // aside
 
+.select {
+    position: relative;
+    margin-bottom: 15px;
+    width: 400px;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 10px;
+  }
+  .select .selectBtn {
+    padding: 13px 16px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+            background: rgb(242, 242, 242);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000000;
+
+  }
+  .select .selectBtn:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transition: 0.2s ease;
+  }
+  .select .selectBtn.toggle {
+    background: rgb(242, 242, 242);
+  }
+  .select .selectBtn.toggle:after {
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+            transform: translateY(-50%) rotate(-135deg);
+  }
+  .select .selectDropdown {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    background: rgb(242, 242, 242);
+    border-top: 1px solid #eee;
+    z-index: 1;
+    background: #fff;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  .select .selectDropdown .option {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000000;
+  }
+  .select .selectDropdown .option:hover {
+    background: #006FA71A;
+  }
+  .select .selectDropdown.toggle {
+    border: 1px solid #87B7FF;
+    margin-top: 6px;
+    border-radius: 10px;
+    padding: 13px 0;
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+
 // block_title
 .block_title {
     margin: 40px 0 24px 0;
@@ -1483,5 +1567,25 @@ header {
     }
 }
 // profile_table
+
+// settings_referal 
+.settings_referal {
+    padding: 50px 40px 248px 40px;
+    background: #fff;
+    border-radius: 10px;
+    gap: 16px;
+
+    h4 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    .main_btn {
+        width: 194px;
+    }
+}
+// settings_referal 
 
 @import './responsive';

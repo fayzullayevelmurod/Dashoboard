@@ -15,6 +15,14 @@
             padding: 8px;
         }
     }
+
+    .partner_table {
+        .table_body,
+        .table_head {
+            gap: 9px;
+            padding: 16px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1560px) {
@@ -398,6 +406,15 @@
             width: 100%;
         }
     }
+
+    .profile_transaction {
+        padding: 24px 0;
+        margin: 0;
+        justify-content: center;
+        .transactions_card {
+            width: 98%;
+        }
+    }
 }
 
 @media only screen and (max-width: 993px) {
@@ -414,6 +431,42 @@
 
         span {
             white-space: nowrap;
+        }
+    }
+
+    .profile_table {
+        min-width: 1479px;
+    }
+
+    .partners_profile {
+        flex-direction: column;
+        gap: 28px;
+        border-radius: 0;
+        padding: 24px 8px;
+
+        .partners_profile_left,
+        .partners_profile_right {
+            gap: 8px;
+
+            ul {
+                gap: 8px;
+            }
+
+            h4 {
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+            .profile_img {
+                margin-top: 20px;
+            }
+
+            span,
+            strong,
+            a {
+                font-size: 16px;
+                line-height: 22px;
+            }
         }
     }
 }

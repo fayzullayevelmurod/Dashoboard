@@ -100,6 +100,21 @@ label {
   color: #000000;
 }
 
+.blue_btn {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #006FA7;
+  padding: 8px 32px;
+  border-radius: 10px;
+  border: 1px solid #006FA7;
+  transition: 0.3s ease;
+}
+.blue_btn:hover {
+  background: #006FA7;
+  color: #fff;
+}
+
 .entrance {
   background-image: url("../images/main_bg.png");
   background-size: cover;
@@ -258,9 +273,25 @@ aside ul a:hover {
   background: rgba(0, 111, 167, 0.1);
   color: rgb(0, 0, 0);
 }
+aside ul a:active {
+  background: #006FA7;
+  color: #fff;
+}
+aside ul a:active svg path {
+  fill: #fff;
+  stroke: #fff;
+}
 aside ul .active {
   background: #006FA7;
   color: #fff;
+}
+aside ul .active:hover {
+  background: #006FA7;
+  color: #fff;
+}
+aside ul .active:hover svg path {
+  fill: #fff;
+  stroke: #fff;
 }
 aside ul .active svg path {
   fill: #fff;
@@ -1331,6 +1362,13 @@ header .line {
 }
 .settings_referal .main_btn {
   width: 194px;
+}
+.settings_referal .logo_upload {
+  gap: 22px;
+}
+.settings_referal .logo_upload img {
+  width: 200px;
+  height: 50px;
 }
 
 @media only screen and (max-width: 1600px) {

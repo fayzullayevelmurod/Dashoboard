@@ -136,6 +136,24 @@ label {
 }
 // main_title
 
+// blue_btn
+.blue_btn {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #006FA7;
+    padding: 8px 32px;
+    border-radius: 10px;
+    border: 1px solid #006FA7;
+    @include transition();
+
+    &:hover {
+        background: #006FA7;
+        color: #fff;
+    }
+}
+// blue_btn
+
 // entrance
 .entrance {
     background-image: url('../images/main_bg.png');
@@ -319,19 +337,34 @@ aside {
             &:hover {
                 background: rgba(0, 111, 167, 0.1);
                 color: rgb(0, 0, 0);
+            }
 
-                // svg {
-                //     path {
-                //         fill: #fff;
-                //         stroke: #fff;
-                //     }
-                // }
+            &:active {
+                background: #006FA7;
+                color: #fff;
+                svg {
+                    path {
+                        fill: #fff;
+                        stroke: #fff;
+                    }
+                }
             }
         }
 
         .active {
             background: #006FA7;
             color: #fff;
+
+            &:hover {
+                background: #006FA7;
+                color: #fff;
+                svg {
+                    path {
+                        fill: #fff;
+                        stroke: #fff;
+                    }
+                }
+            }
 
             svg {
                 path {
@@ -1614,6 +1647,15 @@ header {
 
     .main_btn {
         width: 194px;
+    }
+
+    .logo_upload {
+        gap: 22px;
+
+        img {
+            width: 200px;
+            height: 50px;
+        }
     }
 }
 // settings_referal 

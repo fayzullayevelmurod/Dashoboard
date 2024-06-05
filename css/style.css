@@ -1215,7 +1215,6 @@ header .line {
   }
   .partner_table {
     width: 100%;
-    border-radius: 0;
   }
   .partner_table .table_body,
   .partner_table .table_head {
@@ -1509,6 +1508,9 @@ header .line {
   }
   .profile_transaction .transactions_card {
     width: 98%;
+  }
+  .partner_table {
+    border-radius: 0;
   }
 }
 @media only screen and (max-width: 993px) {

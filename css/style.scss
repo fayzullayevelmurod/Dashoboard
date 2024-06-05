@@ -1316,6 +1316,7 @@ header {
 }
 // fixation
 
+// partner_table
 .partner_table {
     background: #fff;
     border-radius: 10px;
@@ -1392,7 +1393,9 @@ header {
     }
 
 }
+// partner_table
 
+// partners_profile
 .partners_profile {
     margin-bottom: 24px;
     padding: 53px 40px;
@@ -1442,13 +1445,17 @@ header {
         }
     }
 }
+// partners_profile
 
+// profile_transaction
 .profile_transaction {
     padding: 50px 40px;
     border-radius: 10px;
     background: #fff;
 }
+// profile_transaction
 
+// profile_table
 .profile_table {
     .table_body,
     .table_head {
@@ -1475,5 +1482,6 @@ header {
         width: 70px;
     }
 }
+// profile_table
 
 @import './responsive';

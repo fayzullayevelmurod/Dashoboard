@@ -1489,8 +1489,8 @@ header .line {
   height: 32px;
 }
 .pagination a:hover {
-  background: #5FB669;
-  border: 1px solid #5FB669;
+  background: #006FA7;
+  border: 1px solid #006FA7;
 }
 .pagination a:hover span {
   color: #fff;
@@ -1821,6 +1821,62 @@ header .line {
   width: 437px;
 }
 
+.add_offer {
+  padding: 53px 40px 100px 40px;
+  border-radius: 10px;
+  background: #fff;
+}
+.add_offer .add_offer_block_in {
+  gap: 60px;
+  margin-bottom: 40px;
+}
+.add_offer span {
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4E4E4E;
+}
+.add_offer .add_offer_blocks {
+  flex: 1;
+}
+.add_offer .select {
+  width: 100%;
+}
+.add_offer .blue_btn {
+  margin: 0 auto;
+}
+.add_offer .profile_img {
+  gap: 17px;
+}
+.add_offer .one_add_offer_blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.add_offer .two_add_offer_blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.add_offer input,
+.add_offer textarea {
+  width: 100%;
+  resize: none;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #4E4E4E;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  padding: 14px 16px;
+  background: rgb(242, 242, 242);
+}
+.add_offer textarea {
+  height: 85px;
+}
+
 @media only screen and (max-width: 1600px) {
   .fixation_cards .fixation_card {
     width: calc(33.3333333333% - 18px);
@@ -1837,6 +1893,9 @@ header .line {
   .partner_table .table_head {
     gap: 9px;
     padding: 16px;
+  }
+  .add_offer .add_offer_block_in {
+    gap: 16px;
   }
 }
 @media only screen and (max-width: 1560px) {
@@ -1895,6 +1954,14 @@ header .line {
   .blue_btn {
     font-size: 18px;
     line-height: 22px;
+  }
+  .offers .title_select {
+    width: 165px;
+  }
+  .offers .title_select .selectBtn {
+    padding: 8px 11px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .fixation_cards {
     padding: 0 8px;
@@ -2199,6 +2266,25 @@ header .line {
   }
   .partner_table span {
     white-space: nowrap;
+  }
+  .add_offer {
+    padding: 14px 8px;
+  }
+  .add_offer .add_offer_block_in {
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  .add_offer .blue_btn {
+    width: 100%;
+  }
+  .add_offer .main_btn {
+    width: 100%;
+  }
+  .add_offer .add_offer_blocks {
+    width: 100%;
+  }
+  .add_offer .two_add_offer_blocks {
+    gap: 16px;
   }
   .profile_table {
     min-width: 1479px;

@@ -22,6 +22,12 @@
             padding: 16px;
         }
     }
+
+    .add_offer {
+        .add_offer_block_in {
+            gap: 16px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1560px) {
@@ -122,6 +128,18 @@
     .blue_btn {
         font-size: 18px;
         line-height: 22px;
+    }
+
+    .offers {
+        .title_select {
+            width: 165px;
+            
+            .selectBtn {
+                padding: 8px 11px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
     }
 
     .fixation_cards {
@@ -435,6 +453,7 @@
             width: 98%;
         }
     }
+
     .partner_table {
         border-radius: 0;
     }
@@ -518,6 +537,30 @@
 
         span {
             white-space: nowrap;
+        }
+    }
+
+    .add_offer {
+        padding: 14px 8px;
+        .add_offer_block_in {
+            flex-direction: column;
+            margin-bottom: 16px;
+        }
+
+        .blue_btn {
+            width: 100%;
+        }
+
+        .main_btn {
+            width: 100%;
+        }
+
+        .add_offer_blocks {
+            width: 100%;
+        }
+
+        .two_add_offer_blocks {
+            gap: 16px;
         }
     }
 
